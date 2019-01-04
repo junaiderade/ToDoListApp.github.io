@@ -1,0 +1,97 @@
+#container {
+	width: 360px;/*this centers it*/
+	margin: 100px auto;/*top and bottom is 100, left and right is auto*/
+	background: #f7f7f7;
+
+	box-shadow:: 0 0 3px rgba(0,0,0 0.1); /*kind of like a border, 4rth val is transparency*/
+}
+
+.completed{
+	color: gray;
+	text-decoration: line-through;
+}
+
+h1{
+	background: #2980b9;
+	color: gold;
+	margin: 0; /*gets rid of a space*/
+	padding: 10px 20px;
+	font-size: 28px;
+	font-weight: bold; /*since h1s are bolded by default, this makes them normal*/
+}
+
+ul{
+	list-style: none; /*takes out the bullet points*/
+	margin: 0;
+	padding: 0;
+}
+
+body{/*to get the gradient u went to uigradients.com and put it in the body*/
+font-family: Kalam;
+background: #ffd89b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+li{
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	color: #665;
+	font-size: 20px;
+
+}
+
+li:nth-child(2n){/*this means every other li!!!*/
+background: #f7f7f7;
+}
+
+input{
+	font-size: 18px;
+	color:#2980b9;/*color of text*/
+	background-color: #f7f7f7;
+	width: 100%;/*makes it go all the way across*/
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;/*this made it fit nicely, otherwise the input is too longways*/
+	border: 3px solid rgba(0,0,0,0);
+}
+
+input:focus{
+	background: white;
+	border: 3px solid #2980b9;
+	outline: none;/*highlight of browser*/
+}
+
+.fa-tasks{/*css for icon*/
+	float: right;
+}
+
+
+span{/*this was all to style that trash icon lol*/
+background: #e74;/*delete color*/
+height: 40px;
+margin-right: 20px;
+text-align: center;
+color: white;
+width: 0px;
+display: inline-block; /*this makes a huuuuge difference, it allows u to control width and height*/
+transition: 0.2s linear;/*adds animation*/
+opacity: 0;/*to make sure u cant see span. unless u hovering*/
+}
+
+li:hover span{/*this is for the hover effect*/
+	width: 40px;
+	opacity: 1.0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
